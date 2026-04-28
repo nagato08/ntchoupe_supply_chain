@@ -21,7 +21,7 @@ export function CorridorsHero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/hero_acceuil.png"
+          src="/images/hero/hero_corridor.png"
           alt="Corridors logistiques NTCHOUPE"
           fill
           sizes="100vw"
@@ -47,13 +47,6 @@ export function CorridorsHero() {
       />
 
       <div className="max-w-350 mx-auto relative z-10">
-        <span
-          className={`inline-block text-xs font-semibold uppercase tracking-[0.2em] text-accent border-b border-accent/40 pb-1 mb-8 ${
-            isInView ? "animate-fade-in-up" : "opacity-0"
-          }`}
-        >
-          Nos corridors
-        </span>
 
         <h1
           className={`text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] max-w-4xl ${

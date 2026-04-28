@@ -61,7 +61,7 @@ export function TransitTimes() {
   return (
     <section
       ref={ref}
-      className="w-full py-20 md:py-28 bg-surface px-4 sm:px-6"
+      className="w-full pt-10 md:pt-14 pb-20 md:pb-28 bg-surface px-4 sm:px-6"
     >
       <div className="max-w-350 mx-auto">
         {/* Heading */}

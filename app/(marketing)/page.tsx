@@ -8,6 +8,7 @@ import { Testimonials } from "@/components/sections/home/testimonials";
 import { CtaBand } from "@/components/sections/home/cta-band";
 import { Value } from "@/components/sections/home/value";
 import { Stats } from "@/components/sections/home/stats";
+import { CtaDual } from "@/components/sections/home/cta-dual";
 
 export const metadata: Metadata = {
   title: "NTCHOUPE SUPPLY CHAIN — Transport de marchandises sécurisé",
@@ -24,6 +25,7 @@ export default function HomePage() {
       <CorridorsPreview />
       <Testimonials />
       <Stats />
+      <CtaDual />
 
       {/* Marker for IntersectionObserver (Header scroll detection) */}
       <div className="h-0" aria-hidden="true" />

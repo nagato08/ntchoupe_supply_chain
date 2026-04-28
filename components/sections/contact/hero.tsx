@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Sparkles, Zap, Clock } from "lucide-react";
 import { useInView } from "@/lib/hooks/use-in-view";
 
@@ -15,24 +16,30 @@ export function ContactHero() {
   return (
     <section
       ref={ref}
-      className="relative w-full overflow-hidden bg-primary text-white pt-32 md:pt-40 pb-16 md:pb-20 px-4 sm:px-6"
+      className="relative w-full overflow-hidden text-white pt-32 md:pt-40 pb-16 md:pb-20 px-4 sm:px-6"
     >
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero/hero_contact.png"
+          alt="Contact NTCHOUPE Supply Chain"
+          fill
+          sizes="100vw"
+          priority
+          className="object-cover"
+        />
+        {/* Blue gradient overlay */}
+        <div className="absolute inset-0 bg-linear-to-b from-primary/70 via-primary/60 to-primary/75" />
+      </div>
+
       {/* Décor: motif diagonal orange + filets */}
       <div
         aria-hidden="true"
-        className="absolute -top-10 -right-20 w-96 h-96 rotate-12 opacity-[0.06] pointer-events-none"
+        className="absolute -top-10 -right-20 w-96 h-96 rotate-12 opacity-[0.08] pointer-events-none"
         style={{
           background:
             "repeating-linear-gradient(135deg, var(--color-accent) 0 2px, transparent 2px 14px)",
         }}
-      />
-      <div
-        aria-hidden="true"
-        className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-accent/10 blur-3xl pointer-events-none"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute top-1/2 right-1/4 w-72 h-72 rounded-full bg-accent/5 blur-3xl pointer-events-none"
       />
       <div
         aria-hidden="true"
@@ -41,13 +48,6 @@ export function ContactHero() {
 
       <div className="max-w-350 mx-auto relative z-10">
         <div className="max-w-4xl">
-          <span
-            className={`inline-block text-xs font-semibold uppercase tracking-[0.2em] text-accent border-b border-accent/40 pb-1 mb-6 ${
-              isInView ? "animate-fade-in-up" : "opacity-0"
-            }`}
-          >
-            Contact
-          </span>
 
           <h1
             className={`text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] mb-6 md:mb-8 ${

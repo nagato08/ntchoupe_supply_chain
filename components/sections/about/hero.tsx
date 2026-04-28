@@ -17,7 +17,7 @@ export function AboutHero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/hero_acceuil1.png"
+          src="/images/hero/hero_acceuil.png"
           alt="À propos NTCHOUPE Supply Chain"
           fill
           sizes="100vw"
@@ -43,14 +43,6 @@ export function AboutHero() {
       />
 
       <div className="max-w-350 mx-auto relative z-10">
-        <span
-          className={`inline-block text-xs font-semibold uppercase tracking-[0.2em] text-accent border-b border-accent/40 pb-1 mb-8 ${
-            isInView ? "animate-fade-in-up" : "opacity-0"
-          }`}
-        >
-          À propos
-        </span>
-
         <h1
           className={`text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] max-w-4xl ${
             isInView ? "animate-fade-in-up" : "opacity-0"
@@ -73,31 +65,6 @@ export function AboutHero() {
           Cameroun et en Afrique centrale, vos flux logistiques méritent une
           exécution rigoureuse, transparente et humaine.
         </p>
-
-        {/* Tagline keywords */}
-        <div
-          className={`mt-10 md:mt-14 flex flex-wrap gap-x-6 gap-y-4 ${
-            isInView ? "animate-fade-in-up" : "opacity-0"
-          }`}
-          style={isInView ? { animationDelay: "0.45s" } : undefined}
-        >
-          {tags.map((keyword, idx) => (
-            <span
-              key={keyword}
-              className={`inline-flex items-center gap-3 px-4 md:px-5 py-2 md:py-2.5 bg-accent/15 border border-accent/40 rounded-full text-sm md:text-base font-semibold text-accent ${
-                isInView ? "animate-fade-in-up" : "opacity-0"
-              }`}
-              style={
-                isInView
-                  ? { animationDelay: `${0.55 + idx * 0.08}s` }
-                  : undefined
-              }
-            >
-              <span className="w-2 h-2 rounded-full bg-accent" />
-              {keyword}
-            </span>
-          ))}
-        </div>
       </div>
     </section>
   );

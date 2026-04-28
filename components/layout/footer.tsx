@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   Phone,
@@ -88,29 +89,18 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
           {/* Colonne Marque (5/12 sur desktop) */}
           <div className="sm:col-span-2 lg:col-span-5">
-            {/* Logo + nom: SVG inline pour pouvoir colorer en blanc + flèche orange. */}
             <Link
               href="/"
               className="flex items-center gap-3 mb-5 group"
               aria-label="Retour à l'accueil"
             >
-              <svg
-                viewBox="0 0 120 120"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                className="w-10 h-10 shrink-0 text-white"
-              >
-                <circle cx="60" cy="60" r="45" stroke="currentColor" strokeWidth="2.5" />
-                <path d="M 60 15 Q 55 60 60 105" stroke="currentColor" strokeWidth="2" fill="none" />
-                <ellipse cx="60" cy="60" rx="45" ry="18" stroke="currentColor" strokeWidth="2" fill="none" />
-                <ellipse cx="60" cy="45" rx="42" ry="12" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.6" />
-                <ellipse cx="60" cy="75" rx="42" ry="12" stroke="currentColor" strokeWidth="1.5" fill="none" opacity="0.6" />
-                <path d="M 50 30 Q 45 60 50 90" stroke="currentColor" strokeWidth="2.5" fill="none" opacity="0.8" />
-                <g transform="translate(60, 60)">
-                  <line x1="0" y1="20" x2="35" y2="-15" stroke="#F26B21" strokeWidth="3.5" strokeLinecap="round" />
-                  <polygon points="35,-15 38,-8 30,-12" fill="#F26B21" />
-                </g>
-              </svg>
+              <Image
+                src="/logo-removebg.png"
+                alt="NTCHOUPE Supply Chain"
+                width={48}
+                height={48}
+                className="w-12 h-12 shrink-0 object-contain"
+              />
               <div>
                 <div className="text-base md:text-lg font-extrabold tracking-tight leading-tight">
                   NTCHOUPE
