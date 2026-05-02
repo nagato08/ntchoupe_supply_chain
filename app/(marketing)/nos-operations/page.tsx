@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { OperationsHero } from "@/components/sections/operations/hero";
 import { OperationsCategories } from "@/components/sections/operations/categories";
 import { OperationsMissions } from "@/components/sections/operations/missions";
+import { MissionVideo } from "@/components/sections/operations/mission-video";
 import { OperationsStats } from "@/components/sections/operations/stats";
 import { OperationsHighlights } from "@/components/sections/operations/highlights";
+import { FleetGallery } from "@/components/sections/operations/fleet-gallery";
 import { OperationsCta } from "@/components/sections/operations/cta";
 
 export const metadata: Metadata = {
@@ -26,8 +28,10 @@ export default function NosOperationsPage() {
       <OperationsHero />
       <OperationsCategories />
       <OperationsMissions />
+      <MissionVideo />
       <OperationsStats />
       <OperationsHighlights />
+      <FleetGallery />
       <OperationsCta />
     </main>
   );

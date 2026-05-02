@@ -14,8 +14,8 @@ import { CameroonMap } from "./cameroon-map";
 // que le format texte unique "X ↔ Y".
 const CORRIDORS = [
   { from: "Douala", to: "Yaoundé", note: "Axe principal" },
-  { from: "Douala", to: "Garoua", note: "Axe nord" },
-  { from: "Port de Douala", to: "Intérieur du pays", note: "Conteneurs" },
+  { from: "Kribi", to: "Garoua", note: "Axe nord" },
+  { from: "Douala", to: "Bafoussam", note: "Conteneurs" },
 ];
 
 export function CorridorsPreview() {

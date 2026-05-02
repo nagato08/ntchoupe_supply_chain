@@ -166,12 +166,20 @@ export function Footer() {
                   className="w-4 h-4 mt-0.5 text-accent shrink-0"
                   aria-hidden="true"
                 />
-                <a
-                  href={SITE.phoneHref}
-                  className="text-white/80 hover:text-white transition-colors"
-                >
-                  {SITE.phone}
-                </a>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href={SITE.phoneHref}
+                    className="text-white/80 hover:text-white transition-colors"
+                  >
+                    {SITE.phone}
+                  </a>
+                  <a
+                    href={SITE.phoneHref2}
+                    className="text-white/80 hover:text-white transition-colors"
+                  >
+                    {SITE.phone2}
+                  </a>
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <MessageCircle
