@@ -43,8 +43,8 @@ export function CorridorsPreview() {
             </h2>
 
             <p className="text-base md:text-lg text-muted leading-relaxed mb-8 max-w-lg">
-              Trois corridors majeurs au Cameroun, prolongés vers les pays
-              voisins. Notre flotte et notre réseau de partenaires couvrent
+              Trois axes majeurs au Cameroun, prolongés vers les differentes villes
+              voisines. Notre flotte et notre réseau de partenaires couvrent
               l&apos;essentiel des axes commerciaux régionaux.
             </p>
 

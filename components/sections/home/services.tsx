@@ -45,7 +45,7 @@ export function Services() {
               isInView ? "animate-reveal-left" : "opacity-0"
             }`}
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.05]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.05]">
               Une offre logistique
               <br />
               <span className="text-foreground">complète.</span>
@@ -85,7 +85,7 @@ export function Services() {
               <Link
                 href="/services"
                 key={title}
-                className={`group relative rounded-2xl p-7 md:p-8 min-h-70 md:min-h-80 flex flex-col transition-colors duration-500 overflow-hidden ${baseClasses} ${
+                className={`group relative rounded-2xl p-6 md:p-8 min-h-56 md:min-h-80 flex flex-col transition-colors duration-500 overflow-hidden ${baseClasses} ${
                   isInView ? "animate-reveal-up" : "opacity-0"
                 }`}
                 style={

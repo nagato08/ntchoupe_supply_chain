@@ -23,7 +23,7 @@ export function CtaDual() {
           }`}
         >
           {/* Section visuelle gauche (icône + badge) */}
-          <div className="relative lg:col-span-4 bg-linear-to-br from-primary to-primary-900 p-8 md:p-10 flex flex-col justify-between min-h-56 overflow-hidden">
+          <div className="relative lg:col-span-4 bg-linear-to-br from-primary to-primary-900 p-6 md:p-10 flex flex-row lg:flex-col items-center lg:items-start justify-between gap-4 lg:gap-0 lg:min-h-56 overflow-hidden">
             {/* Décor: cercles concentriques */}
             <div
               aria-hidden="true"
@@ -48,23 +48,23 @@ export function CtaDual() {
 
             {/* Icône principale */}
             <div className="relative">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent shadow-lg">
-                <Plane className="w-8 h-8 text-white" aria-hidden="true" />
+              <div className="inline-flex items-center justify-center w-12 h-12 lg:w-16 lg:h-16 rounded-2xl bg-accent shadow-lg">
+                <Plane className="w-6 h-6 lg:w-8 lg:h-8 text-white" aria-hidden="true" />
               </div>
             </div>
           </div>
 
           {/* Section contenu droite */}
-          <div className="lg:col-span-8 p-8 md:p-10 lg:p-12 flex flex-col justify-center">
+          <div className="lg:col-span-8 p-6 md:p-10 lg:p-12 flex flex-col justify-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent mb-3">
               NTCHOUPE Immigration Agency
             </p>
 
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-foreground leading-tight mb-3">
+            <h3 className="text-xl md:text-3xl lg:text-4xl font-extrabold text-foreground leading-tight mb-3">
               Besoin de service en immigration&nbsp;?
             </h3>
 
-            <p className="text-base md:text-lg text-muted leading-relaxed mb-6 max-w-xl">
+            <p className="text-sm md:text-lg text-muted leading-relaxed mb-6 max-w-xl">
               Consultez notre site partenaire pour un accompagnement complet sur
               vos démarches d&apos;immigration.
             </p>

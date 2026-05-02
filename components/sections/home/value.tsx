@@ -33,11 +33,11 @@ export function Value() {
       className="w-full py-12 md:py-16 px-4 sm:px-6"
     >
       <div className="max-w-350 mx-auto">
-        <div className="relative bg-foreground text-white rounded-3xl overflow-hidden p-8 md:p-14 lg:p-16">
+        <div className="relative bg-foreground text-white rounded-3xl overflow-hidden p-6 sm:p-8 md:p-14 lg:p-16">
           {/* Ghost watermark "Nos Valeurs" — top left */}
           <span
             aria-hidden="true"
-            className="absolute -top-2 left-6 md:left-12 text-5xl md:text-7xl lg:text-8xl font-extrabold text-white/4 pointer-events-none select-none whitespace-nowrap"
+            className="absolute -top-2 left-6 md:left-12 text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white/4 pointer-events-none select-none whitespace-nowrap"
           >
             Nos Valeurs
           </span>

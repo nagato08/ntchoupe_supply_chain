@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full min-h-svh h-screen overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 animate-fade-in">
         <Image
@@ -20,15 +20,15 @@ export function Hero() {
         className="absolute bottom-6 md:bottom-10 left-4 md:left-10 right-4 md:right-auto z-20 max-w-3xl animate-fade-in-up"
         style={{ animationDelay: "0.3s" }}
       >
-        <div className="bg-primary/40 backdrop-blur-md rounded-xl px-6 py-5 md:px-8 md:py-6 text-white shadow-2xl">
+        <div className="bg-primary/40 backdrop-blur-md rounded-xl px-5 py-4 sm:px-6 sm:py-5 md:px-8 md:py-6 text-white shadow-2xl">
           <h1
-            className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-2 leading-tight animate-fade-in-up"
+            className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold mb-2 leading-tight animate-fade-in-up"
             style={{ animationDelay: "0.5s" }}
           >
             Logistique pensée pour la rapidité, la précision et l&apos;échelle
           </h1>
           <p
-            className="text-sm md:text-base text-gray-100 mb-4 animate-fade-in-up"
+            className="text-xs sm:text-sm md:text-base text-gray-100 mb-4 animate-fade-in-up"
             style={{ animationDelay: "0.7s" }}
           >
             Du fret routier à la livraison finale, nous structurons vos flux de marchandises au Cameroun et en Afrique centrale.
